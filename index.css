@@ -1,0 +1,57 @@
+div {
+    box-sizing: border-box;
+}
+
+.mainGame {
+    display: none;
+}
+
+.error-message {
+    color: red;
+}
+
+.field {
+    margin: 10px;
+    display: inline-block;
+}
+
+.cell.x:after {
+    content: '✕';
+    color: green;
+    font-size: 70px;
+    position: absolute;
+    width: 71px;
+    height: 71px;
+    line-height: 71px;
+    text-align: center;
+}
+
+.cell.o:after {
+    font-weight: bold;
+    color: red;
+    content: '◯';
+    font-size: 70px;
+    position: absolute;
+    width: 71px;
+    height: 71px;
+    line-height: 75px;
+    text-align: center;
+}
+
+
+
+.row {
+    height: 75px;
+}
+
+.cell {
+    display: inline-block;
+    border: solid gray 2px;
+    width: 75px;
+    height: 75px;
+}
+
+.winner-message {
+    font-size: 50px;
+    font-weight: bold;
+}
